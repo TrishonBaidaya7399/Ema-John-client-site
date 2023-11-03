@@ -36,13 +36,13 @@ const Shop = () => {
      */
   
     useEffect(()=>{
-        fetch(`http://localhost:5000/productsCount`)
+        fetch(`https://ema-john-pagination-server-starter-theta.vercel.app/productsCount`)
         .then(res => res.json())
         .then(data => setCount(data.count))
     },[])
 
     useEffect(() => {
-        fetch(`http://localhost:5000/products?page=${currentPage}&size=${itemsPerPage}`)
+        fetch(`https://ema-john-pagination-server-starter-theta.vercel.app/products?page=${currentPage}&size=${itemsPerPage}`)
             .then(res => res.json())
             .then(data => setProducts(data))
     }, [currentPage, itemsPerPage]);
