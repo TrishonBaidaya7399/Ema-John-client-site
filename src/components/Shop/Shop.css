@@ -52,6 +52,7 @@
 .itemsPerPage{
     display: flex;
     gap: 10px;
+    align-items: center;
 }
 .pageNumberSelect option{
     background: #242424;
