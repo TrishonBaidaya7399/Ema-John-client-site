@@ -25,3 +25,34 @@
     justify-content: space-between;
     align-items: center;
 }
+.pagination{
+    text-align: center;
+    margin-bottom: 40px;
+    display: flex;
+    
+}
+.pgeButtons{
+    margin-right: 20px;
+    background: orange;
+    color: black;
+}
+.selected{
+    background: orangered;
+    color: white;
+}
+.pageNumberSelect{
+    /* border: none; */
+    background: none;
+    font-size: 16px;
+    padding-inline: 10px;
+    border-radius: 10px;
+    text-align: center;
+    margin-right: 20px;
+}
+.itemsPerPage{
+    display: flex;
+    gap: 10px;
+}
+.pageNumberSelect option{
+    background: #242424;
+}
